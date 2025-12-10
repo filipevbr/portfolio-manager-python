@@ -31,4 +31,6 @@ A command-line interface (CLI) application developed in Python to manage persona
 3. Run the main script:
    ```bash
    python main.py
-Author: Filipe Vaz Academic Project for Computational Reasoning - PUCPR
+---
+- **Author:** Filipe Vaz
+- *Academic Project for Computational Reasoning - PUCPR*
