@@ -22,7 +22,7 @@ A command-line interface (CLI) application developed in Python to manage persona
 - `main.py`: Contains the core business logic and menu navigation.
 - `utils.py`: Contains utility functions for input validation and UI/UX.
 - `portfolio.json`: Automatically generated file for data storage.
-- `diario_ia.md`: A log of the development process assisted by AI.
+- `ai_log.md`: A log of the development process assisted by AI.
 
 ## 📦 How to Run
 
