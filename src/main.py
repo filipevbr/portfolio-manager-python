@@ -2,7 +2,7 @@ import os
 import datetime
 import json
 
-  # Funções globais
+# Funções globais
 def mostrar_menu():
     print('-'*12, 'MENU PRINCIPAL', '-'*12)
     print('ADD    -  Adicionar novo projeto')
@@ -191,7 +191,7 @@ def mostrar_sobre():
     print('Autor: Filipe Vaz')  # Mostra informações do autor para o usuário.
     print('-'*40)
 
-  # Funções utilitárias
+# Funções utilitárias
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -221,8 +221,7 @@ def carregar_dados():
     except FileNotFoundError:
         return []
 
-
-  # Funções de mensagens de erro
+# Funções de mensagens de erro
 def sem_projeto():
     print('ERRO: Não existem projetos cadastrados.')
     print('-' * 40)
@@ -237,7 +236,7 @@ def sem_numero():
     print('  ERRO: O NÚMERO não foi reconhecido.')
     print('-' * 40)
 
-  # Função principal
+# Função principal
 def main():
     lista_projetos = carregar_dados()
     while True:
@@ -268,6 +267,6 @@ def main():
 
         input('\nPressione ENTER para voltar ao menu principal...\n')  # Cria uma pausa para o usuário interagir e retornar ao menu.
 
-  # Ponto de entrada do script
+# Ponto de entrada do script
 if __name__ == '__main__':  # Garante que a função main só vá ser executada quando este arquivo for o executado.
     main()
