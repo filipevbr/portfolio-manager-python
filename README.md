@@ -39,7 +39,7 @@ O projeto já possui seu menu principal interativo, a estrutura de repetição e
 2.  Clone este repositório (ou baixe os arquivos).
 3.  Navegue até o diretório do projeto:
     ```bash
-    cd gestor-de-portfolio
+    cd portfolio-manager-python
     ```
 4.  Execute o script principal:
     ```bash
