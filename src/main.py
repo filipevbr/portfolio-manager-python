@@ -4,23 +4,23 @@ import json
 
 # Funções globais
 def mostrar_menu():
-    print('-'*12, 'MENU PRINCIPAL', '-'*12)
+    print('-' * 12, 'MENU PRINCIPAL', '-' * 12)
     print('ADD    -  Adicionar novo projeto')
     print('LIST   -  Listar todos os projetos')
     print('UPDATE -  Atualizar um projeto')
     print('DELETE -  Excluir um projeto')
     print('ABOUT  -  Sobre o projeto')
     print('QUIT   -  Sair do programa')
-    print('-'*40)
+    print('-' * 40)
 
 def adicionar_projeto(lista_projetos):
-    print('-'*10, 'ADICIONAR PROJETOS', '-'*10)
+    print('-' * 10, 'ADICIONAR PROJETOS', '-' * 10)
     try:
         numero_projetos = int(input('Digite o número de projetos que deseja adicionar: \n').strip())  # Recebe o número de projetos do usuário.
     except ValueError:
-        print('-'*45)
+        print('-' * 45)
         print('ERRO: Por gentileza, digite um NÚMERO válido.')
-        print('-'*45)
+        print('-' * 45)
         return  # Cria um ponto de saída imediata da função
 
     if numero_projetos <= 0:  # Verifica se o numero de projetos é menor ou igual a 0.
@@ -42,11 +42,11 @@ def adicionar_projeto(lista_projetos):
             }
 
             lista_projetos.append(cadastro_projeto)  # Adiciona o projeto a lista_projetos.
-
+            
             print(f'\nSUCESSO: "{nome_projeto}" foi adicionado a lista de projetos.')
 
 def listar_projetos(lista_projetos):
-    print('-'*11, 'LISTA DE PROJETOS', '-'*10)
+    print('-' * 11, 'LISTA DE PROJETOS', '-' * 10)
     if not lista_projetos:
         sem_projeto()
         return
@@ -82,9 +82,9 @@ def atualizar_projeto(lista_projetos):
         projeto = encontrar_projeto(lista_projetos, nome_projeto)
 
         if projeto:
-            print('-'*40)
+            print('-' * 40)
             print(f'PROJETO: {projeto['nome']} em atualização...')
-            print('-'*40)
+            print('-' * 40)
             print(f'Opções de atualização para "{projeto['nome']}"')
             print('1 - Atualizar o nome')
             print('2 - Atualizar o status')
@@ -186,10 +186,10 @@ def deletar_projeto(lista_projetos):
             print('\nERRO: O projeto não existe, verifique o NOME.')
 
 def mostrar_sobre():
-    print('-'*11, 'SOBRE O PROJETO', '-'*12)
+    print('-' * 11, 'SOBRE O PROJETO', '-' * 12)
     print('Projeto referente a disciplina de Raciocínio Computacional - PUCPR 2025')  # Mostra informações sobre o projeto para o usuário.
     print('Autor: Filipe Vaz')  # Mostra informações do autor para o usuário.
-    print('-'*40)
+    print('-' * 40)
 
 # Funções utilitárias
 def limpar_tela():
@@ -261,10 +261,10 @@ def main():
                 print('-' * 40)
                 break  # Encerra o loop e fecha o programa.
             case _:
-                print('-'*40)
+                print('-' * 40)
                 print('  ERRO: O comando não foi reconhecido.')
-                print('-'*40)
-
+                print('-' * 40)
+        
         input('\nPressione ENTER para voltar ao menu principal...\n')  # Cria uma pausa para o usuário interagir e retornar ao menu.
 
 # Ponto de entrada do script
